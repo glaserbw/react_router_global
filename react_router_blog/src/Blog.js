@@ -5,7 +5,7 @@ import './App.css';
 class Blog extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="container">
         <h2>{this.props.post.title}</h2>
         <h3>Concoted by: {this.props.post.author}</h3>
         <p>{this.props.post.body}</p>

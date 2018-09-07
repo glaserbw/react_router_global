@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
 // PAGE IMPORTS
+import NavBar from './components/NavBar';
 import Home from './Home';
 import Blog from './Blog';
 import Quote from './Quote';
@@ -19,17 +21,18 @@ const post = {
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
+        <NavBar />
         <Router>
-          <div>
-            <nav>
+          <div className="container">
+{/*            <nav>
               <Link to="/">Home</Link>{' '}
               <Link to="/Blog">Blog</Link>{' '}
               <Link to="/Quote">Words of Wisdom</Link>{' '}
               <Link to="/FavMovie">Favorite Movie</Link>{' '}
               <Link to="/FoodFav">Favorite Food</Link>{' '}
               <Link to="/About">About</Link>
-            </nav>
+            </nav>*/}
             <Route exact path="/" component={Home} />
             <Route exact path="/Blog" component={
                 () => (<Blog post={post} />) } />

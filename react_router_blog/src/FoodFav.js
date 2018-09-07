@@ -5,7 +5,7 @@ import './App.css';
 class FoodFav extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="container">
         <h1>Favorite Food</h1>
       </div>
     );
