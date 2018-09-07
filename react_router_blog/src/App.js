@@ -13,7 +13,7 @@ const post = {
   title: 'Blog post',
   author: 'Brian',
   body: 'Content is King',
-  comments: [ "Was not good", "I want to like it but I just don't" ]
+  comments: [ "I want to like it but I just don't" ]
 };
 
 class App extends Component {
